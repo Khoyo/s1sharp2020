@@ -3,7 +3,6 @@ let rec is_morse l = match l with
   |t::q when t = '.' -> true && is_morse q
   |t::q when t = '-' -> true && is_morse q
   |_ -> false;;
-(*3.2*)
   let letter_to_morse a = match a with
     'A'|'a' -> ['.'; '-']
   | 'B'|'b' -> ['-'; '.'; '.'; '.']
